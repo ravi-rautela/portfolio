@@ -7,19 +7,4 @@ Benfolio is a React and Tailwind CSS-based project that helps you create and sho
 - [Vite](vitejs.dev) 
 - [Tailwind](tailwindcss.com)
 
-## Installation
-```
-git clone https://github.com/kaanayyildiz/benfolio.git
 
-cd benfolio
-
-@Edit the /src/data/config.json file.
-
-npm install
-
-npm run dev
-```
-
-## Demo
-
-[Click here for Benfolio Template demo](https://benfolio.vercel.app)
