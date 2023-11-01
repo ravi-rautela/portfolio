@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { getConfigData } from "../data/configReader";
+import { useNavigate } from "react-router-dom";
 
 export default function Card() {
   const configData = getConfigData();
   const projects = configData.projects;
 
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -15,14 +17,18 @@ export default function Card() {
     setIsHovered(false);
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    navigate("/projects");
+  };
   const svgClass = isHovered
     ? "w-6 h-6 text-gray-500 transition delay-150"
     : "w-6 h-6 text-gray-300";
 
   return (
     <>
-      <div className="px-2">
-        <div className="flex flex-col bg-gray-100 rounded-lg px-5 py-5 ">
+      <div>
+        <div className="flex flex-col bg-gray-100  px-5 py-5 dark:bg-slate-900 dark:text-white">
           <div className="flex items-center justify-between mb-5">
             <div className="font-medium text-lg flex items-center gap-x-2">
               <div className="w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
@@ -31,6 +37,7 @@ export default function Card() {
             <button
               type="button"
               className="gap-x-2 text-gray-900 bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+              onClick={handleClick}
             >
               View All
               <svg
@@ -49,16 +56,16 @@ export default function Card() {
               </svg>
             </button>
           </div>
-          <div className="flex flex-col">
-            {projects.map((project, index) => (
+          <div className="flex flex-col gap-3">
+            {projects.slice(0, 3).map((project, index) => (
               <a
                 key={index}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="drop-shadow-md card bg-white rounded-lg px-5 py-3 gap-x-3 flex flex-col md:flex-none md:flex-row hover:-translate-y-1 hover:scale-100 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300"
-                href=""
+                className="drop-shadow-md card bg-white rounded-lg px-5 py-3 gap-x-3 flex flex-col md:flex-none md:flex-row hover:-translate-y-1 hover:scale-100 duration-300 transition ease-in-out delay-150 hover:shadow-sm border border-gray-200 hover:border-gray-300 dark:bg-black dark:text-white"
+                href="https://github.com/ravi-rautela?tab=repositories&q=&type=&language=&sort="
               >
-                <div className="rounded-full overflow-hidden flex items-center justify-center border border-gray-200 hidden md:block">
+                <div className="rounded-full overflow-hidden flex items-center justify-center border border-gray-200 md:block ">
                   <div className="card-image w-16 h-16 rounded-full overflow-hidden">
                     <img
                       className="w-full h-full object-cover"

@@ -1,22 +1,43 @@
 {
-  "job": "Frontend Developer",
-  "name": "John Doe",
-  "desc": "The traveler of this path, a web designer in Turkey.",
-  "email": "john.doe@example.com",
+  "job": "Full Stack Developer",
+  "name": "Ravi Rautela",
+  "desc": "A full stack developer is proficient in both front-end and back-end technologies, capable of handling all aspects of web development. ",
+  "email": "ranvi44rautela@gmail.com",
   "status": "on",
-  "hireMeLink": "https://twitter.com/iamkaanayyildiz",
+  "hireMeLink": "https://github.com/ravi-rautela",
   "projects": [
     {
-      "project-image-url": "https://github.com/kaanayyildiz/benfolio/assets/39806458/9d826c30-0135-4620-8e0f-bc3460848e5e",
-      "project-name": "Benfolio",
-      "project-desc": "React + Tailwind Portfolio"
+      "project-image-url": "https://cdn.pixabay.com/photo/2022/03/15/18/06/portfolio-7070886_1280.png",
+      "project-name": "Portfolio",
+      "project-desc": "React + Talwind CSS"
+    },
+    {
+      "project-image-url": "https://cdn.pixabay.com/photo/2020/05/15/18/46/coronavirus-5174671_1280.jpg",
+      "project-name": "Covid-19 Tracker",
+      "project-desc": "React + Covid API"
+    },
+    {
+      "project-image-url": "https://cdn.pixabay.com/photo/2022/12/28/02/52/ai-generated-7682124_1280.jpg",
+      "project-name": "Library Management System",
+      "project-desc": "C# + MySQL"
+    },
+    {
+      "project-image-url": "https://cdn.pixabay.com/photo/2013/07/12/19/16/newspaper-154444_1280.png",
+      "project-name": "News Application",
+      "project-desc": "React + REST API"
+    },
+    {
+      "project-image-url": "https://cdn.pixabay.com/photo/2018/05/04/20/01/website-3374825_1280.jpg",
+      "project-name": "Website Clones",
+      "project-desc": "React + Tailwind + MongoDB + Firebase"
+    },
+    {
+      "project-image-url": "https://cdn.pixabay.com/photo/2016/01/09/18/27/journey-1130732_1280.jpg",
+      "project-name": "Test Utils",
+      "project-desc": "React + Bootstrap + Local Storage"
     }
   ],
-  "social": [
-    {
-      "icon": "FaXTwitter",
-      "link": "https://x.com"
-    },
+  "social": [  
     {
       "icon": "FaInstagram",
       "link": "https://instagram.com"
